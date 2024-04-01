@@ -4,9 +4,9 @@ body{
     box-sizing: border-box;  //includes padding and borders in total height/width of elements
 }
 .nav-container{
-    background-color: #265073;
+    background-color: #F1FADA;
     font-size: 1.2rem;
-    color: #F1FADA;
+    color: #265073;
     height: 80px;
     display: flex;
     align-items: center;
@@ -24,8 +24,11 @@ body{
 
 .intro-section{
     width: 100%;
-    padding: 200px 0;
+    padding: 150px 0;
     display: flex;
+    background-image: url("../images/sparkle.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .intro-inner{
@@ -37,6 +40,10 @@ body{
 .intro-inner p{
     font-size: 3.5em;
     color: #F1FADA;
+    
+}
+
+.intro-inner p, .bio-text{
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -48,4 +55,71 @@ body{
     font-style: normal;
     letter-spacing: 3px;
 }
+
+.name{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #FF407D;
+}
+
+.bio-section {
+    background-color: #F1FADA;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: .5fr 2fr;
+    gap: 10px;
+    
+}
+
+.bio-photo{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    
+}
+.bio-text{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    max-width: 85%;
+    align-self: center;
+    font-size: 1.2em;
+    color:#2D9596;
+}
+
+.about-text, .bio-photo{
+    margin: 0 auto;
+}
+
+.about-text{
+    align-self: center;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    
+}
+.about-text, .bio-text span{
+    color: #FF407D;
+    font-size: 2em;
+    line-height: 50px;
+}
+.about-text, .bio-text span, li{
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 30px;
+    padding-top: 30px;
+}
+
+.skills div {
+    background-color: #FF407D;
+    border-radius: 50%;
+    text-align: center;
+    color:#265073
+}
+
 
